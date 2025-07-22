@@ -1,0 +1,157 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shear style  */
+.display-flex{
+    display: flex;
+}
+.dark-1{
+    color: #131313;
+}
+.dark-2{
+    color: #424242;
+}
+.dark-3{
+    color: #727272;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: #ffffff;
+    padding: 1.2rem 1.3rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.3rem;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 120px;
+}
+.section-title{
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+
+/* nav-style  */
+
+header{
+    background-color: rgba(255, 244, 231, 1);
+}
+
+.brand{
+    font-size: 3rem;
+}
+.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-links a{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 2rem;
+}
+/* banner  */
+.banner-container{
+    max-width: 865px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.image img{
+    width: 100%;
+    padding-bottom: 70px;
+}
+/* team feature section  */
+.team-container{
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.about-team{
+    max-width: 530px;
+    margin: 1.6rem 0;
+}
+
+#feature-color{
+    color: #FF900E;
+    font-weight: 600;
+}
+/* facts section  */
+.facts-container{
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 6rem;
+}
+.facts{
+    border: 2px solid #FF900E;
+    padding: 2rem 2.3rem;
+    border-radius: 10px;
+}
+.face-number{
+    color: #424242;
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.fact-name{
+    color:#727272;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* responsive style  */
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .team-container{
+        flex-direction: column;
+    }
+    .nav-links{
+        padding: 0;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .image img{
+        width: 100%;
+    }    
+    /*main section  */
+    .team-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
